@@ -7,104 +7,152 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-<!--        .container {-->
-<!--            width: 100%;-->
-<!--            max-width: 1200px;-->
-<!--            margin: 0 auto;-->
-<!--            padding: 20px;-->
-<!--        }-->
 
-<!--        @media only screen and (max-width: 600px) {-->
-<!--            /* Mobile-specific styles */-->
-<!--            .container {-->
-<!--                padding: 10px;-->
-<!--            }-->
-<!--        }-->
-    </style>
-    <title>Quantum Computing</title>
+		/* CSS for the navigation bar */
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            width: 100%;
+            text-align: center; /* Align content to the left */
+        }
+
+        /* CSS for the logo */
+        .logo {
+            float: left;
+            margin-right: 20px; /* Adjust as needed */
+        }
+
+        .logo img {
+             height: 110px; /* Set the height of the logo */
+             vertical-align: middle; /* Align vertically in the middle */
+
+        }
+
+        .navbar a {
+            float: right;
+            font-size: 30px;
+            display: inline-block;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+            vertical-align: middle; /* Align vertically in the middle */
+        }
+
+        /* Style the navigation links on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+		.list-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .list-item {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+        }
+        .bullet {
+            content: "\8227"; /* Unicode character for a bullet point */
+            color: #333; /* Color of the bullet point */
+            font-size: 1.2em; /* Adjust the size as needed */
+            margin-right: 5px; /* Add space between the bullet and the text */
+            vertical-align: middle; /* Align the bullet to the middle */
+            left: -15px; /* Adjust the positioning of the bullet */
+        }
+        .large-bullet {
+            font-size: 2em; /* Adjust the size of the bullet point */
+            margin-right: 3px; /* Add space between the bullet and the text */
+            vertical-align: middle; /* Align the bullet to the middle */
+
+        }
+
+        .marked {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .number {
+            display: inline-block;
+            width: 1.5em; /* Adjust the width of the number container */
+            margin-right: 5px; /* Add space between the number and the text */
+            font-size: 1.5em; /* Adjust the size of the number */
+            text-align: right;
+        }
+
+	</style>
+    <title>QBee EU</title>
 </head>
+
 <body>
+    <div class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="fig/qbeeLogo.png" alt="Logo" height="110">
+        </div>
+        <a href="#contact">Contact</a>
+        <a href="#about">Home</a>
+    </div>
 
     <header onclick="window.location.href = 'index.html';">
-    	<h1>Hongfeng Zhang</h1>
+    	<h1>Quantum application - the technology revolution</h1>
 	</header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#Post">Post</a></li>
-                <li><a href="Research.html">Research</a></li>
-                <li><a href="Learn.html">Learn</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+
+<!--    <nav>-->
+<!--        <div class="container">-->
+<!--            <ul>-->
+<!--                <li><a href="#Post">Post</a></li>-->
+<!--                <li><a href="Research.html">Research</a></li>-->
+<!--                <li><a href="Learn.html">Learn</a></li>-->
+<!--                <li><a href="#contact">Contact</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
+
 
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-  			<p>
-            	I am a second-year Ph.D. student at the University of Ghent, where I specialize in the fascinating intersection of quantum computing and bioinformatics.
-        	</p>
-        	<p>
-				In my current research, I focus on mRNA codon optimization and mRNA folding, delving into the application of quantum computing to address pressing challenges in bioinformatics. Specifically, my goal is to contribute to the development of mRNA vaccines, a field where quantum algorithms hold immense promise for optimizing sequences and enhancing vaccine efficacy.
-        	</p>
-        	<p>
-				The convergence of quantum computing and bioinformatics presents unprecedented opportunities. My work involves employing advanced quantum algorithms to analyze biological data, striving to uncover novel insights that can revolutionize vaccine design. I am particularly excited about the potential impact my research could have on the fight against infectious diseases.
-        	</p>      
-<!--            <a href="Test.html">Test.</a>-->
-		</div>
+            <h2>About QBee</h2>
+            <p>In 10 years, classical hardware will stop growing in performance. Quantum computing is the only alternative, available technology.</p>
+            <p>The core approach of QBee is to start from the classical algorithms, understand the solutions they provide and define those problems in the Quantum Computing Logic way, called QC-logic.</p>
+
+            <p>We stay active on developing quantum computer software in the following fields:</p>
+            <p><span class="large-bullet">&#9642;</span><b>Quantum genetics:</b> </p>
+            <p>&nbsp &nbsp &nbsp<span class="bullet">&bull;</span><b>Quantum Genome Sequencing</b>: was developed and tested using industrial classical software, originally developed by BlueBee.</p>
+            <p>&nbsp &nbsp &nbsp<span class="bullet">&bull;</span><b>Quantum Vaccine Development</b>: using mRNA, we are now working on a version of vaccine algorithms.</p>
+
+            <p><span class="large-bullet">&#9642;</span><b>Quantum Computational Chemistry:</b> </p>
+            <p>&nbsp &nbsp &nbsp<span class="bullet">&bull;</span>Using <b>VQE-algorithms</b>, we look at chemistry problems and define them in a QC-logic way.</p>
+            <p>&nbsp &nbsp &nbsp<span class="bullet">&bull;</span><b>Deloitte GE competition</b>: QBee won the German Deloitte competition on global warming.</p>
+            <p>&nbsp &nbsp &nbsp<span class="bullet">&bull;</span>This paper is interesting to read: <a href="https://arxiv.org/abs/2309.05465">"Toward" Metal-Organic Framework Design by Quantum Computing</a>.</p>
+
+            <p><span class="large-bullet">&#9642;</span><b>Quantum Earth Observation (EO):</b> </p>
+            <p>&nbsp &nbsp &nbsp<span class="bullet">&bull;</span><b>Satellite images for EO</b>:
+                those images provide information on many challenges of this planet. Examples are coastal dynamics industrial disasters, city evolution, natural disasters,…</p>
+            <p>&nbsp &nbsp &nbsp<span class="bullet">&bull;</span><b>Quantum EO algorithms</b>: given the huge amount of images, scalable compute power is needed. In addition, those algorithms are also relevant to explore the planet Mars. </p>
+        </div>
     </section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-        </div>
-		
-		<div id="DivContent">
-            <h3>Program</h3>
-            <p>Java, Python3, HTML</p>
-        </div>
-		
-		<div id="DivContent">
-            <h3>Quantum Language</h3>
-            <p>Qiskit, Pennylane, OpenQASM</p>
-        </div>
 
-		<div id="DivContent">
-            <h3>DB</h3>
-            <p>Mysql, Doris, MongoDB</p>
-        </div>
-
-		<div id="DivContent">
-            <h3>CI/DI</h3>
-            <p>Docker</p>
-        </div>
-
-		<div id="DivContent">
-            <h3>Build Tool</h3>
-            <p>Gradle, Maven</p>
-        </div>
-
-		<div id="DivContent">
-            <h3>Version Control</h3>
-            <p>Git, SVN</p>
-        </div>
-
-    </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: tankzhang19@gmail.com</p>
-            <p>LinkedIn: linkedin.com/in/zhang-hongfeng-176122270/</p>
+            <h2>Contact QBee</h2>
+            <p>Email: <a href="mailto:koen.bertels@qbee.eu">koen.bertels@qbee.eu</a></p>
+            <p>LinkedIn: <a href='https://www.linkedin.com/company/qbeex/'>https://www.linkedin.com/company/qbeex/</a></p>
             <!-- Add more contact information as needed -->
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Hongfeng Zhang</p>
+            <p>Copyright &copy; 2023 QBee EU</p>
         </div>
     </footer>
 

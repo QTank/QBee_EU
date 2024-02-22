@@ -4,10 +4,10 @@ body {
 }
 
 header {
-	background-image: url('fig/qc.png');
+	background-image: url('fig/stack.jpeg');
     background-size: cover; /* Adjust as needed */
     background-position: center center; /* Adjust as needed */
-    height: 300px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
     color: #fff; /* Set text color to be visible on the background */
     text-align: center; /* Adjust as needed */
     padding: 20px; /* Adjust as needed */
